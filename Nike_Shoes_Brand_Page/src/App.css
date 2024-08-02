@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+
+:root {
+  --btn:#CDF5FD;
+  --btnhover:#00A9FF;
+}
+
+* {
+  margin: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Section  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+
+.logo {
+  width: 9%;
+  height:40px;
+  padding: 5px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+}
+
+ul li {
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+ul li:hover {
+  margin: 0;
+  color: var(--btnhover);
+  transform: translateY(-5px);
+  
+}
+
+nav button {
+  all: unset;
+  background-color: var(--btn);
+  padding: 7px;
+  width: 120px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  transition: .5s;
+  border: 2px solid var(--btn);
+  border-radius: 30px;
+}
+
+nav button:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 1px 5px var(--btnhover);
+  border: 2px solid var(--btnhover);
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  max-height:856px;
+  max-width: 1125px;
+  align-items: center;
+  margin:0 auto;
+}
+
+.herotext {
+  max-width: 595px;
+  max-height: 306px;
+  margin-top: 1%;
+}
+
+.herotext h1 {
+  font-size: 85px;
+  line-height: 85px;
+}
+
+.herotext .hero-desc {
+  font-weight: 600;
+  max-width: 425px;
+  margin: 30px 0 25px 0;
+}
+
+.herotext button {
+  all: unset;
+  background-color: var(--btn);
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  transition: .5s;
+
+}
+
+.herotext .btn1 {
+  margin-right: 5%;
+  border: 2px solid  var(--btn);
+}
+
+.herotext .btn1:hover {
+  transform: translateY(-4px);
+  border: 2px solid  var(--btnhover);
+  box-shadow: 1px 1px 5px var(--btnhover);
+}
+
+.herotext .btn2 {
+background-color: transparent;
+border: 2px solid  var(--btnhover);
+}
+
+.herotext .btn2:hover {
+  transform: translateY(-4px);
+  background-color: var(--btn);
+  box-shadow: 1px 1px 5px var(--btnhover);
+}
+
+.available {
+  margin-top: 30px;
+}
+
+.herotext img {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.heroimage {
+  margin:auto;
+}

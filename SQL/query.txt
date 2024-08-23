@@ -1,3 +1,5 @@
+
+===============> C U R D methods <================
 // Create a table
 
 CREATE TABLE products (
@@ -24,3 +26,9 @@ WHERE id = 2;
 
 ALTER TABLE products
 ADD stock INT
+
+// delete 
+
+
+DELETE TABLE products
+WHERE id =2;

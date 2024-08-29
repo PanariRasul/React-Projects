@@ -10,6 +10,7 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     align-items: center;
+    background: #e0e0e0;
 }
 
 /* Navbar */
@@ -74,11 +75,19 @@ nav {
 .hero {
     width: 50%;
     margin: 50px 0;
+    transition: 1s;
 
 }
 
 .hero img {
     width: 100%;
+
+}
+
+.hero:hover {
+    box-shadow: 5px 5px 7px #bebebe,
+        -5px -5px 7px #ffffff;
+    cursor: pointer;
 }
 
 .hero-text {

@@ -1,4 +1,4 @@
-
+//SQL QUERIES 
 ===============> C U R D methods <================
 // Create a table
 

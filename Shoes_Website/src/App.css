@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    margin: auto;
+    max-width: 1540px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1540px;
+    height: 72px;
+    padding: 10px 70px;
+    box-shadow: 1px 1px 5px black;
+}
+
+nav img {
+    width: 75px;
+    height: 45px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+nav ul li {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button {
+    all: unset;
+    border: none;
+    background-color: red;
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+main {
+    display: flex;
+    max-width: 1540px;
+    align-items: center;
+    justify-content: center;
+    max-height: calc(100vh - 72px);
+}
+
+/* .hero-text {
+    font-size: 50px;
+    max-width: 600px;
+    line-height: 95px;
+    margin: 80px auto;
+} */
+
+.hero-text h1 {
+    font-size: 108px;
+    max-width: 600px;
+    line-height: 102px;
+    margin-top: 40px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    max-width: 400px;
+    color: #5A5959;
+}
+
+.btn {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+
+}
+
+.btn button {
+    width: 141px;
+    height: 41px;
+}
+
+.btn {
+    .primary-btn {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .secondery-btn {
+        font-size: 24px;
+        font-weight: 500;
+        background-color: transparent;
+        color: #5A5959;
+        border: 1px solid black;
+    }
+}
+
+.brand-logo {
+    p {
+        margin-top: 36px;
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+        margin: 16px;
+    }
+}

@@ -123,6 +123,6 @@ main {
     img {
         width: 32px;
         height: 32px;
-        margin: 16px;
+        margin: 16px 16px 0px 0px;
     }
 }

@@ -1,11 +1,11 @@
 import './App.css'
 import HomePage from './Components/HomePage'
-import SecondPage from './Components/SecondPage'
+import GamePlay from './Components/GamePlay'
 import { useState } from 'react';
 
 function App() {
 
-  const [isGameStarted, setGameStarted] = useState(false);
+  const [isGameStarted, setGameStarted] = useState(true);
 
   const toggleGamePlay = () => {
     setGameStarted((prev) => !prev);
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      {isGameStarted ? <SecondPage /> : <HomePage toggle={toggleGamePlay} />}
+      {isGameStarted ? <GamePlay /> : <HomePage toggle={toggleGamePlay} />}
     </div>
 
   )

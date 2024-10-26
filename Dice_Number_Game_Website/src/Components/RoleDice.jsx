@@ -1,23 +1,12 @@
 import { useState } from "react";
 import { styled } from 'styled-components';
 
-const RoleDice = () => {
+const RoleDice = ({ curentDice, roleDice, setScore, showRules, setShowRules }) => {
 
-    const showRules = () => {
-        alert("Game Rules:\n1. Select a number from 1 to 6.\n2. Click on the dice to roll.\n3. If you roll your selected number, you gain that score.");
+    const resetScore = () => {
+        setScore(0)
     };
 
-
-    const [curentDice, setCurentDice] = useState(1);
-
-    const generateRandomNumber = (min, max) => {
-        return (Math.floor(Math.random() * (max - min + 1)) + min);
-    }
-
-    const roleDice = () => {
-        const randomNumber = generateRandomNumber(1, 6);
-        setCurentDice(randomNumber);
-    };
 
     return (
         <Main >
@@ -25,8 +14,8 @@ const RoleDice = () => {
                 <img src={`/images/dice_${curentDice}.png`} alt="Dice" />
             </div>
             <p>Click on Dice to roll</p>
-            <button className="prm-btn">Reset Score</button>
-            <button className='scnd-btn' onClick={showRules} >Show Rules</button>
+            <button className="prm-btn" onClick={resetScore}>Reset Score</button>
+            <button className='scnd-btn' onClick={() => setShowRules((prev) => !prev)} >{showRules ? "Hide" : "Show"} Rules</button>
         </Main>
     );
 };

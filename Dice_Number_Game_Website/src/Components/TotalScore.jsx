@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 
-const TotalScore = () => {
+const TotalScore = ({ score, setScore }) => {
 
     return (
         <Main>
-            <h1 >0</h1>
+            <h1 >{score}</h1>
             <p>Total Score</p>
         </Main>
     );
